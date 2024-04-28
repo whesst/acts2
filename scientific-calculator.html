@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Calculator</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+<body>
+
+  <div class="content">
+    <div class="calculator">
+        <button class="history-button" onclick="toggleRecent()"><i class="fas fa-history"></i></button>
+    <div class="recent-solutions" id="recentSolutions" style="display: none;"></div>
+      <div class="display" id="display">0</div>
+      <div class="buttons">
+        <button id="clear">AC</button>
+        <button id="delete">⌫</button>
+        <button class="modifier">(</button>
+        <button class="modifier">)</button>
+        <button id="sqrt">√</button>
+        <button id="exp">exp</button>
+        <button id="log">log</button>
+        <button id="sin">sin</button>
+        <button id="cos">cos</button>
+        <button id="tan">tan</button>
+        <button class="modifier">%</button>
+        <button class="operator">÷</button>
+        <button class="number">7</button>
+        <button class="number">8</button>
+        <button class="number">9</button>
+        <button class="operator">*</button>
+        <button class="number">4</button>
+        <button class="number">5</button>
+        <button class="number">6</button>
+        <button class="operator">-</button>
+        <button class="number">1</button>
+        <button class="number">2</button>
+        <button class="number">3</button>
+        <button class="operator">+</button>
+        <button id="decimal">.</button>
+        <button class="number">0</button>
+        <button id="equals">=</button>
+      </div>
+    </div>
+  </div>
+  <script src="scripts.js"></script>
+</body>
+</html>

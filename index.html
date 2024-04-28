@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Calculator</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+<body>
+<div class="content">
+
+  
+  <div class="calculator">
+    <button class="history-button" onclick="toggleRecent()"><i class="fas fa-history"></i></button>
+    <div class="recent-solutions" id="recentSolutions" style="display: none;"></div>
+    <div class="display" id="display">0</div>
+    <div class="buttons">
+      <button class="clear" onclick="clearDisplay()">AC</button>
+      <button onclick="deleteLastDigit()">⌫</button>
+      <button onclick="calculatePercentage()">%</button>
+      <button onclick="appendOperator('/')">÷</button>
+      <button onclick="appendNumber('7')">7</button>
+      <button onclick="appendNumber('8')">8</button>
+      <button onclick="appendNumber('9')">9</button>
+      <button onclick="appendOperator('*')">x</button>
+      <button onclick="appendNumber('4')">4</button>
+      <button onclick="appendNumber('5')">5</button>
+      <button onclick="appendNumber('6')">6</button>
+      <button onclick="appendOperator('+')">+</button>
+      <button onclick="appendNumber('1')">1</button>
+      <button onclick="appendNumber('2')">2</button>
+      <button onclick="appendNumber('3')">3</button>
+      <button onclick="appendOperator('-')">-</button>
+      <button onclick="appendDecimal()">.</button>
+      <button onclick="appendNumber('0')">0</button>
+      <button class="equal" onclick="calculate()">=</button>
+    </div>
+    <button class="normal-button" onclick="goToCalculator()">1 2 3</button>
+    <button class="scientific-button" onclick="goToScientificCalculator()">FX</button>
+  </div>
+  
+  <script src="script.js"></script>
+</body>
+</html>
